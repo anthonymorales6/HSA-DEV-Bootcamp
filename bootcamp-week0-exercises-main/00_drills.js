@@ -10,7 +10,7 @@
 // SYNTAX NOTE: on a function with one parameter (input) the parenthesis are omitted
 
 // TODO - write a function which reverses the string
-const reverse = (str) => {
+function reverse(str) {
   splitString = str.split("");
   reverseArray = splitString.reverse();
   joinArray = reverseArray.join("");
@@ -18,24 +18,14 @@ const reverse = (str) => {
 }
 
 // TODO - write a function which returns the factorial of a positive integer
-const factorial = (num) => {
-  let result = num;
-  if (num === 0 || num === 1){
-    return 1;
-  }
-  while (num > 1){
-    num = num - 1;
-    result = result * num;
-  }
-  return result;
-}
-
-// TODO - write a function which combines two arrays into an array of 2-element 
-// arrays and returns -1 if the two arrays are of unequal length
-// Example: zip([1, 2, 3], [5, 3, 1]) === [[1, 5], [2, 3], [3, 1]]
-const zip = (arr1, arr2) => {
+function factorial(num) {
   
 }
+
+// TODO - write a function which combines two arrays into an array of 2-element arrays and returns -1
+// if the two arrays are of unequal length
+// Example: zip([1, 2, 3], [5, 3, 1]) === [[1, 5], [2, 3], [3, 1]]
+// const zip = (arr1, arr2) => {}
 
 // TODO - Write a function which does the opposite of `zip()`
 // const unzip = (arr) => {}
@@ -51,7 +41,7 @@ const zip = (arr1, arr2) => {
 module.exports = {
    reverse,
    factorial,
-   zip,
+  // zip,
   // unzip,
   // shiftRight,
   // announceDate,
